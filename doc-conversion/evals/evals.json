@@ -1,0 +1,61 @@
+{
+  "skill_name": "doc-conversion",
+  "evals": [
+    {
+      "id": 1,
+      "name": "word-simple",
+      "prompt": "把 /path/to/document.docx 转成 markdown 格式",
+      "expected_output": "生成 document.md 文件，保留标题、段落、列表等基本格式",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 2,
+      "name": "word-with-tables",
+      "prompt": "这个 Word 文档里有表格，帮我转成 markdown，表格要保留：/path/to/report.docx",
+      "expected_output": "表格正确转换为 Markdown 表格或 HTML 表格",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 3,
+      "name": "word-with-images",
+      "prompt": "把这份带图片的文档转为 markdown：/path/to/guide.docx",
+      "expected_output": "图片提取到独立目录，Markdown 中正确引用图片路径",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 4,
+      "name": "pdf-text-based",
+      "prompt": "将这个 PDF 转换为 markdown：/path/to/manual.pdf",
+      "expected_output": "文字型 PDF 正确提取，保持段落和标题结构",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 5,
+      "name": "pdf-scanned-ocr",
+      "prompt": "这是个扫描版 PDF，帮我转成 markdown：/path/to/scanned.pdf",
+      "expected_output": "使用 OCR 识别文字，生成可读的 Markdown 文件",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 6,
+      "name": "batch-conversion",
+      "prompt": "把 /path/to/docs/ 目录下所有 PDF 文件都转成 markdown",
+      "expected_output": "所有 PDF 文件逐一转换，生成对应的 .md 文件",
+      "files": [],
+      "assertions": []
+    },
+    {
+      "id": 7,
+      "name": "mixed-content",
+      "prompt": "这份文档有标题、表格、图片和代码块，帮我高质量转成 markdown：/path/to/complex.docx",
+      "expected_output": "所有元素正确转换，格式完整保留",
+      "files": [],
+      "assertions": []
+    }
+  ]
+}
